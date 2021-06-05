@@ -7,69 +7,84 @@ import imageSliderStyles from "./ImageSlider.module.css";
 import quotes from "../../images/quotes.svg";
 import img from "../../images/img.png";
 
-const ImageSlider = (props) => {
-  const [active, setActive] = React.useState(0);
-  const [slidesArr, setSlidesArr] = React.useState(props.slides);
-  const [direction, setDirection] = React.useState("");
+class ImageSlider extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: 0,
+      slidesArr: this.props.slides,
+      direction: "",
+    };
+  }
 
-  const slideRef = React.useRef(null);
-
-  const generateItems = () => {
-    var items = [];
-    console.log(active);
-    for (var i = active - 2; i < active + 3; i++) {
-      var index = i;
+  generateItems = () => {
+    let items = [];
+    console.log(this.state.active);
+    for (let i = this.state.active - 1; i < this.state.active + 2; i++) {
+      let index = i;
       if (i < 0) {
-        index = slidesArr.length + i;
-      } else if (i >= slidesArr.length) {
-        index = i % slidesArr.length;
+        index = this.state.slidesArr.length + i;
+      } else if (i >= this.state.slidesArr.length) {
+        index = i % this.state.slidesArr.length;
       }
-      items = 
-        slidesArr.map((slide, indexSlide) => {
-         return <Item key={indexSlide} slideInfo={slide} index={index}  active={active} />
-        })
+      items = this.state.slidesArr.map((slide, indexSlide) => {
+        return (
+          <Item
+            key={indexSlide}
+            slideInfo={slide}
+            index={index}
+            active={this.state.active}
+          />
+        );
+      });
     }
     console.log(items);
     return items;
   };
 
-  const moveLeft = () => {
-    var newActive = active;
+  moveLeft = () => {
+    var newActive = this.state.active;
     newActive--;
-    setActive(newActive < 0 ? slidesArr.length - 1 : newActive);
-    setDirection("left");
+    this.setState({
+      active: newActive < 0 ? this.state.slidesArr.length - 1 : newActive,
+      direction: "left",
+    });
   };
 
-  const moveRight = () => {
-    var newActive = active;
-    setActive((newActive + 1) % slidesArr.length);
-    setDirection("right");
+  moveRight = () => {
+    var newActive = this.state.active;
+    this.setState({
+      active: (newActive + 1) % this.state.slidesArr.length,
+      direction: "right",
+    });
   };
 
-  return (
-    <>
-      <div
-        className={`${imageSliderStyles.slider} ${imageSliderStyles.slider_track}`}
-      >
-        {generateItems()}
-      </div>
-      <div className={imageSliderStyles.arrows}>
-        <button
-          className={imageSliderStyles.arrow}
-          type="button"
-          id="left"
-          onClick={moveLeft}
-        ></button>
-        <button
-          className={imageSliderStyles.arrow}
-          type="button"
-          id="right"
-          onClick={moveRight}
-        ></button>
-      </div>
-    </>
-  );
-};
+  render() {
+    return (
+      <>
+        <div
+          className={`${imageSliderStyles.slider} ${imageSliderStyles.slider_track}`}
+        >
+          {this.generateItems()}
+        </div>
+        <div className={imageSliderStyles.arrows}>
+          <button
+            className={imageSliderStyles.arrow}
+            type="button"
+            id="left"
+            onClick={this.moveLeft}
+          ></button>
+          <button
+            className={imageSliderStyles.arrow}
+            type="button"
+            id="right"
+            onClick={this.moveRight}
+          ></button>
+        </div>
+      </>
+    );
+  }
+}
 
 function Item(props) {
   return (
@@ -78,6 +93,7 @@ function Item(props) {
         props.active ? imageSliderStyles.active : ""
       }`}
       ref={props.slideRef}
+      style={{left: `${props.index * 1080}px`}}
     >
       <div className={imageSliderStyles.text_box}>
         <img className={imageSliderStyles.svg} src={quotes} alt="quotes" />

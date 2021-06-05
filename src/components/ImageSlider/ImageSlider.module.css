@@ -8,6 +8,7 @@
 
 .slider {
   align-items: center;
+  justify-content: center;
   position: relative;
   height: 615px;
   margin-bottom: 80px;
@@ -42,6 +43,7 @@
 }
 
 .slide {
+  position: relative;
   height: 485px;
   display: flex;
   justify-content: center;
@@ -52,6 +54,7 @@
   box-shadow: 2px 8px 16px rgba(194, 198, 208, 0.06);
   border-radius: 5px;
 }
+
 
 .slide.active {
   width: 1180px;
