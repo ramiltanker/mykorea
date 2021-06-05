@@ -15,6 +15,7 @@ class ImageSlider extends React.Component {
       slidesArr: this.props.slides,
       direction: "",
     };
+    this.items = this.generateItems();
   }
 
   generateItems = () => {
