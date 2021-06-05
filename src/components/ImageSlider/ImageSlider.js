@@ -9,47 +9,40 @@ import img from "../../images/img.png";
 
 const ImageSlider = (props) => {
   const [active, setActive] = React.useState(0);
+  const [slidesArr, setSlidesArr] = React.useState(props.slides);
   const [direction, setDirection] = React.useState("");
 
   const slideRef = React.useRef(null);
 
   const generateItems = () => {
     var items = [];
-    var level;
     console.log(active);
-    for (var i = active - 1; i < active + 3; i++) {
+    for (var i = active - 2; i < active + 3; i++) {
       var index = i;
       if (i < 0) {
-        index = props.slides.length + i;
-      } else if (i >= props.slides.length) {
-        index = i % props.slides.length;
+        index = slidesArr.length + i;
+      } else if (i >= slidesArr.length) {
+        index = i % slidesArr.length;
       }
-      level = active - i;
-     items = [...props.slides.map((slide) => (
-        <Item
-          key={index}
-          id={props.slides[index]}
-          level={level}
-          slideRef={slideRef}
-          slidesArray={props.slides}
-          slideInfo={slide}
-          index={index}
-        />
-      ))]
+      items = 
+        slidesArr.map((slide, indexSlide) => {
+         return <Item key={indexSlide} slideInfo={slide} index={index}  active={active} />
+        })
     }
+    console.log(items);
     return items;
   };
 
   const moveLeft = () => {
     var newActive = active;
     newActive--;
-    setActive(newActive < 0 ? props.slides.length - 1 : newActive);
+    setActive(newActive < 0 ? slidesArr.length - 1 : newActive);
     setDirection("left");
   };
 
   const moveRight = () => {
     var newActive = active;
-    setActive((newActive + 1) % props.slides.length);
+    setActive((newActive + 1) % slidesArr.length);
     setDirection("right");
   };
 
@@ -79,14 +72,12 @@ const ImageSlider = (props) => {
 };
 
 function Item(props) {
-  console.log(props.slidesArray);
   return (
     <div
       className={`${imageSliderStyles.slide} ${
-        props.activeSlide ? imageSliderStyles.active : ""
+        props.active ? imageSliderStyles.active : ""
       }`}
       ref={props.slideRef}
-      style={{ left: props.index * 1080 }}
     >
       <div className={imageSliderStyles.text_box}>
         <img className={imageSliderStyles.svg} src={quotes} alt="quotes" />

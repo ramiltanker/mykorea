@@ -42,7 +42,6 @@
 }
 
 .slide {
-  position: absolute;
   height: 485px;
   display: flex;
   justify-content: center;
