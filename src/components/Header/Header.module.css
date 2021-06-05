@@ -1,0 +1,260 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  min-height: 1750px;
+  position: relative;
+  margin: 0, auto;
+  background-image: url(../../images/header__background.png),
+    url(../../images/header_form-background.png);
+  background-size: contain, 1300px 1200px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, 250px 550px;
+}
+
+.container {
+  display: flex;
+  z-index: 10;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.authorization_box {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+  min-height: 80px;
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+  margin-top: 35px;
+}
+
+.sign_in {
+  padding: 20px 40px;
+  background: #5d6afb;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 152%;
+  color: #ffffff;
+  transition: all 0.2s linear;
+}
+
+.sign_in:hover {
+  background: #5d6afb00;
+  border: 2px solid #5d6afb;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transition: all 0.2s linear;
+}
+
+.sign_up {
+  composes: sign_in;
+}
+
+.logo {
+  object-fit: contain;
+  margin-left: 30px;
+}
+
+.title {
+  position: absolute;
+  left: 5%;
+  top: 40%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 66px;
+  color: #ffffff;
+}
+
+.form_container {
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form {
+  display: flex;
+  position: absolute;
+  z-index: 20;
+  right: 20px;
+  top: 755px;
+  width: 650px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(89, 38, 234, 0.8);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 80px;
+}
+
+.form_title {
+  width: 100%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 152%;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+
+.input {
+  width: 600px;
+  height: 30px;
+  background: #fffafa;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 13px;
+  margin-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+}
+
+.input:first-of-type {
+  background-image: url(../../images/input_name-icon.svg);
+}
+
+.input:nth-of-type(2) {
+  background-image: url(../../images/input_number-icon.svg);
+}
+
+.input:last-of-type {
+  background-image: url(../../images/input_email-icon.svg);
+}
+
+.form_button {
+  width: 600px;
+  height: 50px;
+  background: #d43355;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 48.5px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 133%;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.form_button:hover {
+  border: 3px solid #d43355;
+  background: #d4335600;
+  transition: all 0.2s linear;
+}
+
+@media all and (max-width: 768px) {
+  .header {
+    width: 100%;
+    min-height: auto;
+    height: 100%;
+    background: none;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 85px 1fr;
+    row-gap: 40px;
+    justify-items: center;
+    align-items: center;
+    background-image: url(../../images/header_image_mobile.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .sign_in {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px 18px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 152%;
+  }
+  .sign_in:hover {
+    background: rgba(212, 51, 85, 0.89);
+    border-radius: 7px;
+  }
+  .sign_up {
+    composes: sign_in;
+  }
+  .logo {
+    width: 160px;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  .authorization_box {
+    width: 100%;
+    grid-row: 1/1;
+    justify-self: flex-start;
+    margin: 0;
+  }
+  .links {
+    gap: 10px;
+  }
+  .form {
+    width: 300px;
+    position: relative;
+    right: 0;
+    top: 0;
+    border-radius: 31px;
+    margin-left: 50px;
+  }
+  .input {
+    width: 280px;
+    height: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    height: 36px;
+  }
+  .form_button {
+    width: 280px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 133%;
+  }
+  .form_title {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 152%;
+    width: 280px;
+  }
+  .form_container {
+    margin-top: 16px;
+    width: 100%;
+    background-image: url(../../images/form_iamge.png);
+    background-repeat: no-repeat;
+    background-size: 325px 344px;
+    background-position: 90%;
+  }
+}

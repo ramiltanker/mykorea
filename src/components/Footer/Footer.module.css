@@ -1,0 +1,117 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #5926ea;
+}
+
+.shell {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials_box {
+  display: flex;
+  margin-left: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.title {
+  margin-left: 50px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 152%;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.socials_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.socials_icon {
+  object-fit: contain;
+}
+
+.contacts {
+  display: flex;
+  margin-right: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contacts_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.contacts_li {
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 152%;
+  color: #ffffff;
+}
+
+.contacts_image {
+  margin-right: 15px;
+  object-fit: contain;
+}
+
+.email_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.email {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 152%;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.contacts_email_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 152%;
+  color: #ffffff;
+}

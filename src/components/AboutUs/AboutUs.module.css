@@ -1,0 +1,50 @@
+.about_us {
+  display: flex;
+  background-image: url(../../images/about-us.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  position: relative;
+  width: 980px;
+  height: 980px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(../../images/about-us_circle.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 150px;
+}
+
+.title {
+  
+  font-family: Montserrat;
+  position: absolute;
+  top: 0;
+  left: 15%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 152%;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.text {
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  width: 600px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 152%;
+  color: #ffffff;
+}

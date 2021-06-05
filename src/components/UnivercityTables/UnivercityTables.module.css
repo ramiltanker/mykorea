@@ -1,0 +1,42 @@
+.table {
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 3px solid #54647b;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 152%;
+  color: #000000;
+  border-collapse: collapse;
+  margin-bottom: 100px;
+  empty-cells: show;
+}
+
+.table:last-of-type {
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.table tr {
+  border: 3px solid #54647b; /* границы между строками */
+}
+.table td,
+th {
+  border: 3px solid #54647b; /* границы между столбцами */
+  height: 80px;
+  padding: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.table th {
+  background: #979797;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}

@@ -1,0 +1,18 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.header {
+  margin: 0;
+  margin-bottom: 80px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 133%;
+  text-align: center;
+  color: #2e363e;
+}

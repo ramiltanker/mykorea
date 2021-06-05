@@ -1,0 +1,79 @@
+.visa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 152%;
+  color: #000000;
+  margin-left: 50px;
+  align-self: flex-start;
+}
+
+.table {
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 3px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 152%;
+  color: #000000;
+  border-collapse: collapse;
+  margin-bottom: 100px;
+  empty-cells: show;
+}
+
+.table:last-of-type {
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.table td,
+th {
+  border: 3px solid #000000;
+  height: 80px;
+  padding: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.table th {
+  border: 3px solid #000000;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: decimal;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 152%;
+  color: #000000;
+  padding-left: 50px;
+}
+
+.list_li {
+  margin-bottom: 50px;
+}
+
+.table td:first-of-type {
+  display: flex;
+  border: none;
+}
