@@ -19,7 +19,6 @@ class ImageSlider extends React.Component {
 
   generateItems = () => {
     let items = [];
-    console.log(this.state.active);
     for (let i = this.state.active - 1; i < this.state.active + 2; i++) {
       let index = i;
       if (i < 0) {
@@ -27,18 +26,14 @@ class ImageSlider extends React.Component {
       } else if (i >= this.state.slidesArr.length) {
         index = i % this.state.slidesArr.length;
       }
-      items = this.state.slidesArr.map((slide, indexSlide) => {
-        return (
-          <Item
-            key={indexSlide}
-            slideInfo={slide}
-            index={index}
-            active={this.state.active}
-          />
-        );
-      });
+      items.push(
+        <Item
+          key={index}
+          item={this.state.slidesArr[index]}
+          active={this.state.active === index ? true : false}
+        />
+      );
     }
-    console.log(items);
     return items;
   };
 
@@ -93,23 +88,22 @@ function Item(props) {
         props.active ? imageSliderStyles.active : ""
       }`}
       ref={props.slideRef}
-      style={{left: `${props.index * 1080}px`}}
     >
       <div className={imageSliderStyles.text_box}>
         <img className={imageSliderStyles.svg} src={quotes} alt="quotes" />
         <h3 className={imageSliderStyles.title}>
-          {props.slideInfo.bestPhrase}
+          {props.item.bestPhrase}
         </h3>
-        <p className={imageSliderStyles.text}>«{props.slideInfo.review}»</p>
+        <p className={imageSliderStyles.text}>«{props.item.review}»</p>
       </div>
       <div className={imageSliderStyles.human_box}>
         <img
-          src={props.slideInfo.image}
+          src={props.item.image}
           alt="test_img"
           className={imageSliderStyles.image}
         />
-        <p className={imageSliderStyles.name}>{props.slideInfo.name}</p>
-        <p className={imageSliderStyles.city}>{props.slideInfo.city}</p>
+        <p className={imageSliderStyles.name}>{props.item.name}</p>
+        <p className={imageSliderStyles.city}>{props.item.city}</p>
       </div>
     </div>
   );
