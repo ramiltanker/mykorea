@@ -74,3 +74,15 @@
     height: 46px;
   }
 }
+
+@media all and (max-width: 425px) {
+  .tabs {
+    margin-bottom: 18px;
+    gap: 6px;
+  }
+  .tab {
+    width: 250px;
+    height: 35px;
+    font-size: 14px;
+  }
+}

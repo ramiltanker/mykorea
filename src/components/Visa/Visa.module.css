@@ -34,11 +34,6 @@
   empty-cells: show;
 }
 
-.table:last-of-type {
-  margin-left: 90px;
-  margin-right: 90px;
-}
-
 .table td,
 th {
   border: 3px solid #000000;
@@ -76,4 +71,50 @@ th {
 .table td:first-of-type {
   display: flex;
   border: none;
+}
+
+@media all and (max-width: 768px) {
+  .visa {
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    font-size: 21px;
+    line-height: 152%;
+    margin: 0;
+  }
+  .table {
+    width: 90%;
+    margin: 0;
+    font-size: 14px;
+    margin-top: 26px;
+  }
+  .table tr {
+    border: 3px solid #000000; /* границы между строками */
+  }
+  .table th {
+    border: 3px solid #000000;
+  }
+  .table td,
+  th {
+    border: 3px solid #000000; /* границы между столбцами */
+    height: 20px;
+    padding: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .list {
+    font-size: 14px;
+  }
+  .list_li {
+    margin-bottom: 20px;
+  }
+  .list_text {
+    margin: 0;
+  }
 }

@@ -8,12 +8,12 @@ import Main from "../Main/Main.js";
 
 function App() {
   const [screenWidth, setScreenWidth] = React.useState(0);
-  const [isEducation, setIsEducation] = React.useState(true);
+  const [isEducation, setIsEducation] = React.useState(false);
   const educationRef = React.useRef(null);
   const [isUnivercities, setIsUnivercities] = React.useState(false);
   const univercitiesRef = React.useRef(null);
 
-  const [isContacts, setIsContacts] = React.useState(false);
+  const [isContacts, setIsContacts] = React.useState(true);
   const contactsRef = React.useRef(null);
 
   // const scroolToBlock = (ref) => {

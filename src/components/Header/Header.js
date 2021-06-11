@@ -7,7 +7,7 @@ import headerStyles from "./Header.module.css";
 
 // Картинки
 import logo from "../../images/logo.svg";
-import logoMobile from "../../images/logo-mobile.svg";
+import logoMobile from "../../images/MY KOREA 5.svg";
 // Картинки
 
 // Компоненты

@@ -20,17 +20,17 @@ function UnivercityTables() {
           <tr>
             <th>
               <span>
-                <img src={blackHeart} alt="Сердце" />
+                <img src={blackHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
               </span>
             </th>
             <th>
               <span>
-                <img src={top} alt="Сердце" />
+                <img src={top} alt="Сердце" className={univercityTablesStyles.table_icon}/>
               </span>
             </th>
             <th>
               <span>
-                <img src={flag} alt="Сердце" />
+                <img src={flag} alt="Сердце" className={univercityTablesStyles.table_icon}/>
               </span>
             </th>
             <th>
@@ -48,7 +48,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>52</td>
             <td>1</td>
@@ -59,7 +59,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>114</td>
             <td>2</td>
@@ -70,7 +70,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>147</td>
             <td>3</td>
@@ -81,7 +81,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>148</td>
             <td>4</td>
@@ -92,7 +92,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>159</td>
             <td>5</td>
@@ -103,7 +103,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>194</td>
             <td>6</td>
@@ -114,7 +114,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>245</td>
             <td>7</td>
@@ -125,7 +125,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>288</td>
             <td>8</td>
@@ -136,7 +136,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>369</td>
             <td>9</td>
@@ -147,7 +147,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>429</td>
             <td>10</td>
@@ -158,7 +158,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>489</td>
             <td>11</td>
@@ -169,7 +169,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>525</td>
             <td>12</td>
@@ -180,7 +180,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>534</td>
             <td>13</td>
@@ -191,7 +191,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>549</td>
             <td>14</td>
@@ -202,7 +202,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>567</td>
             <td>15</td>
@@ -213,7 +213,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>568</td>
             <td>16</td>
@@ -224,7 +224,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>581</td>
             <td>17</td>
@@ -235,7 +235,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>602</td>
             <td>18</td>
@@ -246,7 +246,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>679</td>
             <td>19</td>
@@ -257,7 +257,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>683</td>
             <td>20</td>
@@ -272,7 +272,7 @@ function UnivercityTables() {
         <thead>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>21</td>
             <td>Chungam National University</td>
@@ -282,7 +282,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>22</td>
             <td>Chungam National University</td>
@@ -292,7 +292,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>23</td>
             <td>Universiti of Ulsan</td>
@@ -302,7 +302,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>24</td>
             <td>Dankook University</td>
@@ -312,7 +312,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>25</td>
             <td>Halym University</td>
@@ -322,7 +322,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>26</td>
             <td>Konkun University</td>
@@ -332,7 +332,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>27</td>
             <td>Yeungnam University</td>
@@ -342,7 +342,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>28</td>
             <td>Korea National Open University</td>
@@ -352,7 +352,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>29</td>
             <td>Korea Polytechnic Univerity</td>
@@ -362,7 +362,7 @@ function UnivercityTables() {
           </tr>
           <tr>
             <td>
-              <img src={greyHeart} alt="Сердце" />
+              <img src={greyHeart} alt="Сердце" className={univercityTablesStyles.table_icon} />
             </td>
             <td>30</td>
             <td>Keimyung University</td>

@@ -115,3 +115,141 @@
   line-height: 152%;
   color: #ffffff;
 }
+
+@media all and (max-width: 768px) {
+  .footer {
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 28px;
+    position: relative;
+  }
+  .shell {
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .socials_box {
+    margin-left: 0;
+  }
+  .title {
+    margin-top: 22px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .contacts_li {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 152%;
+  }
+  .socials_icon {
+    width: 50px;
+    height: 50px;
+  }
+  .email {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 152%;
+  }
+  .contacts_image {
+    width: 16px;
+    height: 16px;
+  }
+  .contacts_list {
+    margin-bottom: 0;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .contacts {
+    margin-right: 0;
+  }
+  .header {
+    position: absolute;
+    left: 16px;
+    bottom: 0;
+  }
+}
+
+@media all and (max-width: 580px) {
+  .shell {
+    flex-direction: column;
+    margin-top: 3px;
+    justify-content: space-between;
+  }
+  .header {
+    width: 100%;
+    left: 0;
+    position: relative;
+    align-self: flex-start;
+    justify-self: flex-start;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .footer {
+    padding-bottom: 10px;
+  }
+  .shell {
+    flex-direction: column;
+    margin-top: 3px;
+    justify-content: space-between;
+  }
+  .socials_box {
+    margin-left: 0;
+  }
+  .title {
+    width: 100%;
+    margin-top: 0px;
+    font-size: 17px;
+  }
+  .contacts_li {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 152%;
+  }
+  .socials_list {
+    display: grid;
+    align-self: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .socials_icon {
+    width: 40px;
+    height: 40px;
+  }
+  .email {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 152%;
+  }
+  .contacts_image {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+  .contacts_list {
+    margin-bottom: 0;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .contacts {
+    margin-right: 0;
+  }
+  .header {
+    width: 100%;
+    left: 0;
+    position: relative;
+    align-self: flex-start;
+    justify-self: flex-start;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  .contacts_email_box {
+    margin-top: 10px;
+  }
+}

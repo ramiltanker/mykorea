@@ -13,7 +13,7 @@ import Reviews from "../Reviews/Reviews.js";
 function Main(props) {
   return (
     <>
-      {/* <Header
+      <Header
         screenWidth={props.screenWidth}
         handleSwitchTab={props.handleSwitchTab}
         isUnivercities={props.isUnivercities}
@@ -28,11 +28,11 @@ function Main(props) {
       <Universities
         isUnivercities={props.isUnivercities}
         univercitiesRef={props.univercitiesRef}
-      /> */}
+      />
       {/* <AboutUs /> */}
       <Contacts contactsRef={props.contactsRef} isContacts={props.isContacts} />
       <Footer />
-      <Reviews />
+      {/* <Reviews /> */}
     </>
   );
 }

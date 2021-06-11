@@ -258,3 +258,116 @@
     background-position: 90%;
   }
 }
+
+@media all and (max-width: 726px) {
+  .form_container {
+    background-size: 250px 300px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .form_container {
+    background-size: 200px 300px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .form_container {
+    display: flex;
+    justify-content: center;
+    background-size: 200px 180px;
+    background-position: center bottom;
+    padding-bottom: 190px;
+  }
+  .form {
+    width: 300px;
+    position: relative;
+    right: 0;
+    top: 0;
+    border-radius: 31px;
+    margin-left: 0;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .header {
+    margin-bottom: 17px;
+  }
+  .container {
+    grid-template-rows: 1fr;
+    row-gap: 16px;
+    align-items: baseline;
+    background-image: url(../../images/header_mobile-back.png);
+    background-size: cover;
+  }
+  .sign_in {
+    font-size: 12px;
+  }
+  .sign_in:hover {
+    background: rgba(212, 51, 85, 0.89);
+    border-radius: 7px;
+  }
+  .sign_up {
+    composes: sign_in;
+  }
+  .logo {
+    width: 110px;
+    height: 50px;
+    margin-top: 4px;
+    margin-left: 15px;
+  }
+  .authorization_box {
+    min-height: auto;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-self: baseline;
+  }
+  .links {
+    display: flex;
+    gap: 7px;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .form {
+    width: 300px;
+    position: relative;
+    right: 0;
+    top: 0;
+    border-radius: 31px;
+    margin-left: 0;
+  }
+  .input {
+    width: 280px;
+    height: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    height: 36px;
+  }
+  .form_button {
+    width: 280px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 133%;
+  }
+  .form_title {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 152%;
+    width: 280px;
+  }
+  .form_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    width: 100%;
+    background-image: url(../../images/form_iamge.png);
+    background-repeat: no-repeat;
+    background-size: 200px 180px;
+    background-position: center bottom;
+    padding-bottom: 190px;
+  }
+}

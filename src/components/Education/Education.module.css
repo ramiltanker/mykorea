@@ -348,6 +348,9 @@ th {
     color: #000000;
     margin-bottom: 20px;
   }
+  .advantages_text:last-of-type {
+    margin-bottom: 0;
+  }
   .concerns {
     margin: 0;
   }
@@ -461,8 +464,50 @@ th {
     font-size: 17px;
     line-height: 152%;
   }
+  .entrance_sub_text:last-of-type {
+    margin-bottom: 0;
+  }
   .entrance_sub_text_box {
     margin-top: 20px;
+  }
+
+  .cost {
+    margin-top: 20px;
+  }
+  .cost_title {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 152%;
+    margin-bottom: 22px;
+  }
+  .cost_degree {
+    font-size: 17px;
+    line-height: 152%;
+    margin-bottom: 15px;
+  }
+  .cost_text {
+    font-size: 17px;
+    line-height: 152%;
+    margin-top: 0;
+  }
+  .table {
+    margin-top: 50px;
+    font-size: 14px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .table tr {
+    border: 3px solid #54647b; /* границы между строками */
+  }
+  .table td,
+  th {
+    border: 3px solid #54647b; /* границы между столбцами */
+    height: 80px;
+    padding: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -479,4 +524,195 @@ th {
 .concerns_container_image {
   width: 192px;
   height: 192px;
+}
+
+@media all and (max-width: 425px) {
+  .education {
+    width: 100%;
+  }
+  .advantages {
+    background: none;
+    width: 100%;
+    height: auto;
+  }
+  .advantages_title {
+    width: 90%;
+    font-size: 21px;
+    line-height: 152%;
+    color: #000000;
+    margin-bottom: 19px;
+  }
+  .advantages_text {
+    width: 90%;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 152%;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+
+  .concerns {
+    margin: 0;
+  }
+  .concerns_shell {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .concerns_title {
+    font-size: 21px;
+    line-height: 152%;
+    color: #000000;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 23px;
+  }
+  .concerns_box {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  .concerns_container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-bottom: 16px;
+  }
+  .concerns_container_image {
+    width: 130px;
+    height: 130px;
+  }
+  .concerns_subtitle {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .concerns_text {
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  .entrance {
+    align-items: center;
+  }
+  .entrance_shell {
+    background: none;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .entrance_title {
+    width: 90%;
+    margin-bottom: 18px;
+    margin-left: 0px;
+  }
+  .entrance_circle {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .entrance_circle:first-of-type {
+    background: none;
+    border: none;
+    width: 100%;
+    height: auto;
+  }
+  .entrance_circle:last-of-type {
+    margin-top: 20px;
+    background: none;
+    width: 100%;
+    height: auto;
+    border: none;
+    right: 0;
+  }
+  .entrance_text {
+    width: 90%;
+    margin-left: 0px;
+    margin-bottom: 24px;
+  }
+  .entrance_container {
+    margin-left: 25px;
+    margin-right: 25px;
+
+  }
+  .entrance_subtitle {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .entrance_list {
+    margin-bottom: 0px;
+  }
+
+  .entrance_li {
+    font-weight: 500;
+    width: 90%;
+    font-size: 17px;
+    line-height: 152%;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  .entrance_li:last-of-type {
+    margin-bottom: 0;
+  }
+  .entrance_sub_text {
+    width: 100%;
+    margin-top: 0;
+  }
+  .entrance_sub_text:last-of-type {
+    margin-bottom: 0;
+  }
+  .entrance_sub_text_box {
+    margin: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+  }
+
+  .cost {
+    margin: 0;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .cost_box {
+    align-items: center;
+  }
+  .cost_title {
+    width: 90%;
+    margin-bottom: 22px;
+  }
+  .cost_degree {
+    width: 90%;
+  }
+  .cost_text {
+    width: 90%;
+  }
+  .table {
+    margin-top: 50px;
+    font-size: 14px;
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .table tr {
+    border: 3px solid #54647b; /* границы между строками */
+  }
+  .table td,
+  th {
+    border: 3px solid #54647b; /* границы между столбцами */
+    height: 15px;
+    padding: 0;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
 }

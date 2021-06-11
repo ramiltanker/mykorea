@@ -208,7 +208,7 @@ function Education(props) {
               <h3 className={educationStyles.entrance_subtitle}>
                 Визовый процесс:
               </h3>
-              <ul className={educationStyles.entrance_list}>
+              <ul className={educationStyles.entrance_list} id="visa">
                 <li className={educationStyles.entrance_li}>
                   Подготовка необходимых визовых документов.
                 </li>
@@ -243,7 +243,7 @@ function Education(props) {
           </p>
         </div>
       </div>
-      {/* <div className={educationStyles.cost}>
+      <div className={educationStyles.cost}>
         <h2 className={educationStyles.cost_title}>
           Стоимость обучения в Корее для Казахстанцев:
         </h2>
@@ -320,7 +320,7 @@ function Education(props) {
             </tr>
           </thead>
         </table>
-      </div> */}
+      </div>
     </section>
   );
 }

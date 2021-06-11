@@ -2,7 +2,7 @@
   margin-top: 100px;
   margin-left: 50px;
   margin-right: 50px;
-  border: 3px solid #54647b;
+  border: 3px solid #000000;
   box-sizing: border-box;
   border-radius: 20px;
   font-family: Montserrat;
@@ -21,12 +21,16 @@
   margin-right: 90px;
 }
 
+.table th {
+  border: 3px solid #000000;
+}
+
 .table tr {
-  border: 3px solid #54647b; /* границы между строками */
+  border: 3px solid #000000; /* границы между строками */
 }
 .table td,
 th {
-  border: 3px solid #54647b; /* границы между столбцами */
+  border: 3px solid #000000; /* границы между столбцами */
   height: 80px;
   padding: 0;
   padding-bottom: 20px;
@@ -39,4 +43,73 @@ th {
   background: #979797;
   border: 1px solid #000000;
   box-sizing: border-box;
+}
+
+@media all and (max-width: 768px) {
+  .table {
+    width: 90%;
+    margin-top: 50px;
+    font-size: 14px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 22px;
+  }
+  .table:last-of-type {
+    margin-top: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .table tr {
+    border: 3px solid #000000; /* границы между строками */
+  }
+  .table th {
+    border: 3px solid #000000;
+  }
+  .table td,
+  th {
+    width: auto;
+    border: 3px solid #000000; /* границы между столбцами */
+    height: 20px;
+    padding: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+
+@media all and (max-width: 425px) {
+  .table {
+    width: 90%;
+    margin-top: 50px;
+    font-size: 7px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 22px;
+  }
+  .table tr {
+    border: 3px solid #000000; /* границы между строками */
+  }
+  .table th {
+    border: 3px solid #000000;
+  }
+  .table td,
+  th {
+    border: 3px solid #000000; /* границы между столбцами */
+    height: 20px;
+    padding: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .table_icon {
+    width: 20px;
+    height: 20px;
+  }
 }
