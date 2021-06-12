@@ -1,21 +1,16 @@
 .tabs {
+  padding: 0 15px;
   display: flex;
-  max-width: 1600px;
-  margin: 0, auto;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 20%;
-  left: 15px;
-  right: 15px;
 }
 
 .tab {
   width: 301px;
   height: 68px;
   background: #5926ea;
+  border: 2px solid transparent;
   border-radius: 34px;
-  border-width: 0px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -35,12 +30,12 @@
   border-width: 2px;
   border-style: solid;
   border-color: #5926ea;
+  pointer-events: none;
+  cursor: default;
 }
 
 .tab:hover {
   background: #5a26ea00;
-  border-width: 2px;
-  border-style: solid;
   border-color: #5926ea;
   transition: all 0.2s linear;
 }

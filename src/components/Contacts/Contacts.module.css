@@ -90,6 +90,11 @@
   margin: 0;
 }
 
+.text a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .text_box {
   width: 100%;
   display: flex;

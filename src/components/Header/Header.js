@@ -6,7 +6,7 @@ import headerStyles from "./Header.module.css";
 // Стили
 
 // Картинки
-import logo from "../../images/logo.svg";
+import logo from "../../images/logo.png";
 import logoMobile from "../../images/MY KOREA 5.svg";
 // Картинки
 
@@ -19,7 +19,9 @@ function Header(props) {
     <header className={headerStyles.header}>
       <div className={headerStyles.container}>
         <div className={headerStyles.authorization_box}>
-          <img src={props.screenWidth > 769 ? logo : logoMobile} alt="Лого" className={headerStyles.logo} />
+          <a href="#">
+            <img src={props.screenWidth > 769 ? logo : logoMobile} alt="Лого" className={headerStyles.logo} />
+          </a>
           <div className={headerStyles.links}>
             <Link to="#" className={headerStyles.sign_in}>
               Войти
@@ -51,7 +53,7 @@ function Header(props) {
             name="name"
           />
           <input
-            type="number"
+            type="phone"
             placeholder="Номер телефона"
             className={headerStyles.input}
             name="phone"

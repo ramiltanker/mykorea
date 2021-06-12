@@ -33,7 +33,7 @@ function Contacts(props) {
                 className={contactsStyles.icon}
               />
               <p className={contactsStyles.text}>
-                +7 700 769 66 88 (whats app) – Александр
+                <a href="https://wa.me/77007696688">+7 700 769 66 88</a> (whats app) – Александр
               </p>
             </li>
             <li className={contactsStyles.li}>
@@ -43,12 +43,12 @@ function Contacts(props) {
                 className={contactsStyles.icon}
               />
               <p className={contactsStyles.text}>
-                +7 707 323 64 85 (whats app) – Дмитрий
+                <a href="https://wa.me/77073236485">+7 707 323 64 85</a> (whats app) – Дмитрий
               </p>
             </li>
             <li className={contactsStyles.li}>
               <img src={phone} alt="phone" className={contactsStyles.icon} />
-              <p className={contactsStyles.text}>+7 775 732 54 83 – Юрий</p>
+              <p className={contactsStyles.text}><a href="tel:+77757325483">+7 775 732 54 83</a> – Юрий</p>
             </li>
           </ul>
         </div>

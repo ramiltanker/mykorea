@@ -77,34 +77,28 @@ function Footer() {
           <h2 className={footerStyles.title}>Контакты:</h2>
           <ul className={footerStyles.contacts_list}>
             <li className={footerStyles.contacts_li}>
-              +7 700 769 66 88 (whats app) – Александр
-              <Link to="#">
-                <img
-                  src={whatsApp}
-                  alt="WhatsApp"
-                  className={footerStyles.contacts_image}
-                />
-              </Link>
+              (whats app) – Александр<a href="https://wa.me/77007696688">+7 700 769 66 88&nbsp;</a>
+              <img
+                src={whatsApp}
+                alt="WhatsApp"
+                className={footerStyles.contacts_image}
+              />
             </li>
             <li className={footerStyles.contacts_li}>
-              +7 707 323 64 85 (whats app) – Дмитрий
-              <Link to="#">
-                <img
-                  src={whatsApp}
-                  alt="WhatsApp"
-                  className={footerStyles.contacts_image}
-                />
-              </Link>
+              (whats app) – Дмитрий<a href="https://wa.me/77073236485">+7 707 323 64 85&nbsp;</a> 
+              <img
+                src={whatsApp}
+                alt="WhatsApp"
+                className={footerStyles.contacts_image}
+              />
             </li>
             <li className={footerStyles.contacts_li}>
-              +7 775 732 54 83 – Юрий
-              <Link to="#">
-                <img
-                  src={phone}
-                  alt="Phone"
-                  className={footerStyles.contacts_image}
-                />
-              </Link>
+              – Юрий <a href="tel:+77757325483">+7 775 732 54 83&nbsp;</a>
+              <img
+                src={phone}
+                alt="Phone"
+                className={footerStyles.contacts_image}
+              />
             </li>
           </ul>
           <div className={footerStyles.email_box}>
@@ -115,7 +109,7 @@ function Footer() {
                 alt="email"
                 className={footerStyles.contacts_image}
               />
-              <p className={footerStyles.email}>test@gmail.com</p>
+              <p className={footerStyles.email}><a href="mailto:test@gmail.com">test@gmail.com</a></p>
             </div>
           </div>
         </div>

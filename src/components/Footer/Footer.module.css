@@ -76,6 +76,11 @@
   color: #ffffff;
 }
 
+.contacts_li a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .contacts_image {
   margin-right: 15px;
   object-fit: contain;
@@ -98,6 +103,11 @@
   align-items: center;
   color: #ffffff;
   margin: 0;
+}
+
+.email a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .contacts_email_box {
