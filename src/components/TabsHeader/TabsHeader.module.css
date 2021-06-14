@@ -6,6 +6,7 @@
 }
 
 .tab {
+  -webkit-appearance: none;
   width: 301px;
   height: 68px;
   background: #5926ea;

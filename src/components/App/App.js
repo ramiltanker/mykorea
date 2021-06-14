@@ -8,17 +8,17 @@ import Main from "../Main/Main.js";
 
 function App() {
   const [screenWidth, setScreenWidth] = React.useState(0);
-  const [isEducation, setIsEducation] = React.useState(false);
+  const [isEducation, setIsEducation] = React.useState(true);
   const educationRef = React.useRef(null);
   const [isUnivercities, setIsUnivercities] = React.useState(false);
   const univercitiesRef = React.useRef(null);
 
-  const [isContacts, setIsContacts] = React.useState(true);
+  const [isContacts, setIsContacts] = React.useState(false);
   const contactsRef = React.useRef(null);
 
-  // const scroolToBlock = (ref) => {
-  //   scroll.scrollTo(ref.current.offsetTop, -70);
-  // };
+  const scroolToBlock = (ref) => {
+    scroll.scrollTo(ref.current.offsetTop, -70);
+  };
 
   function handleUpdateScreenWidth(width) {
     setScreenWidth(width);
@@ -51,17 +51,17 @@ function App() {
     }
   }
 
-  // React.useEffect(() => {
-  //   if (isUnivercities && !isEducation && !isContacts) {
-  //     scroolToBlock(univercitiesRef);
-  //   }
-  //   if (isEducation && !isUnivercities && !isContacts) {
-  //     scroolToBlock(educationRef);
-  //   }
-  //   if (isContacts && !isUnivercities && !isEducation) {
-  //     scroolToBlock(contactsRef);
-  //   }
-  // }, [isUnivercities, isEducation, isContacts]);
+  React.useEffect(() => {
+    if (isUnivercities && !isEducation && !isContacts) {
+      scroolToBlock(univercitiesRef);
+    }
+    if (isEducation && !isUnivercities && !isContacts) {
+      scroolToBlock(educationRef);
+    }
+    if (isContacts && !isUnivercities && !isEducation) {
+      scroolToBlock(contactsRef);
+    }
+  }, [isUnivercities, isEducation, isContacts]);
 
   return (
     <>
