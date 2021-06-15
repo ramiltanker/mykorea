@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mykorea/static/css/main.fa674459.chunk.css",
+    "main.css": "/mykorea/static/css/main.0bc93056.chunk.css",
     "main.js": "/mykorea/static/js/main.88d6aec4.chunk.js",
     "main.js.map": "/mykorea/static/js/main.88d6aec4.chunk.js.map",
     "runtime-main.js": "/mykorea/static/js/runtime-main.32cf6ae5.js",
@@ -10,7 +10,7 @@
     "static/js/3.47611d75.chunk.js": "/mykorea/static/js/3.47611d75.chunk.js",
     "static/js/3.47611d75.chunk.js.map": "/mykorea/static/js/3.47611d75.chunk.js.map",
     "index.html": "/mykorea/index.html",
-    "static/css/main.fa674459.chunk.css.map": "/mykorea/static/css/main.fa674459.chunk.css.map",
+    "static/css/main.0bc93056.chunk.css.map": "/mykorea/static/css/main.0bc93056.chunk.css.map",
     "static/js/2.c1442cb5.chunk.js.LICENSE.txt": "/mykorea/static/js/2.c1442cb5.chunk.js.LICENSE.txt",
     "static/media/ImageSlider.module.css": "/mykorea/static/media/Arrow-right.14d90dea.svg",
     "static/media/Education.module.css": "/mykorea/static/media/Ellipse_blur.414c853b.png",
@@ -42,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.32cf6ae5.js",
     "static/js/2.c1442cb5.chunk.js",
-    "static/css/main.fa674459.chunk.css",
+    "static/css/main.0bc93056.chunk.css",
     "static/js/main.88d6aec4.chunk.js"
   ]
 }
